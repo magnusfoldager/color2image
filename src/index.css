@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+	--font-sans: "Roboto", ui-sans-serif, system-ui, sans-serif;
+	--font-mono: "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+		"Liberation Mono", "Courier New", monospace;
+	--font-heading: "Google Sans", "Roboto", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+	body {
+		@apply font-sans;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-heading font-semibold;
+	}
+
+	code,
+	pre,
+	kbd,
+	samp {
+		@apply font-mono;
+	}
+}
+
+
